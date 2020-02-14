@@ -8,6 +8,7 @@ As a user ... I want to be able to view create and track daily workouts ... So t
 Node.js
 Express.js
 Mongo DB
+Express (require)
 
 ## Screenshots
 
