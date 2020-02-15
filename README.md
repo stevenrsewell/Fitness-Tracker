@@ -6,9 +6,8 @@ As a user ... I want to be able to view create and track daily workouts ... So t
 
 ## Dependencies Used
 Node.js
-Express.js
+Express
 Mongo DB
-Express (require)
 
 ## Screenshots
 
