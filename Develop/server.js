@@ -2,23 +2,16 @@ const express = require('express');
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3000
+const PORT = process.env.PORT || 3000;
 
-// app.get('/', (req, res) => res.send('Hello World!'))
+const db = require("./models");
 
-// app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
+app.use(logger("dev"));
 
-// app.get('/api/workouts', function (req, res) {
-//   res.send('yes')
-// })
-
-// app.post('/api/workouts', function (req, res) {
-
-// })
-
-// app.put('/api/workouts', function (req, res) {
-
-// })
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 require("./routes/api-routes")(app);
 require("./routes/html-routes")(app);

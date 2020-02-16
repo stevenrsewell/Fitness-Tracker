@@ -1,5 +1,5 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "Fitness-Tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,6 +8,10 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenrsewell/fitness-tracker.git"
   },
   "author": "",
   "license": "ISC",
