@@ -16,5 +16,5 @@ var schema = new mongoose.Schema({
   
   })
 
-var Workout = mongoose.model("Workout", WorkoutSchema);
+var Workout = mongoose.model("Workout", Workout);
 module.exports = Workout;
